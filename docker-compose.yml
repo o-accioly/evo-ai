@@ -2,6 +2,8 @@ version: "3.8"
 
 services:
   api:
+    build:
+      context: .
     image: evo-ai-api:latest
     depends_on:
       - postgres
